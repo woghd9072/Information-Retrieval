@@ -66,14 +66,19 @@
   - TF-IDF 벡터 표현
     1. 용어의 문서 내 출현 빈도인 TF와 문서집합 내 역문헌빈도인 IDF를 동시에 고려하는 벡터성분 표현
     2. 벡터공간모델의 대표적 용어 가중치 부여 방식
-    
+
 ### 4주차
-- Precision
-- Recall
+- Precision(정확률)
+  $$ Precision = {검색된 문서중 적합문서의 수\over 검색된 문서의 수} $$
+- Recall(재현율)
+  $$ Recall = {검색된 문서중 적합문서의 수\over 적합문서의 수} $$
 
 ### 5주차
 - F지표
+$$ F = {1\over\alpha{1\over P}+(1-\alpha){1\over R}} $$
 - F1지표
+$$ F1(\alpha=1/2) = {1\over\alpha{1\over P}+(1-\alpha){1\over R}}
+= {1\over {1\over 2}{1\over P}+(1-{1\over 2}){1\over R}} = {2PR\over P+R} $$
 
 ### 6주차
 - Precision-Recall Curve
