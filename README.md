@@ -28,9 +28,14 @@
     - 특정한 용어가 문서 집합 전체에서 출현한 횟수
   - IDF
     - 역문헌 빈도수
+
     $$ idf(t) = log({N\over df(t)}) $$
+
   - 가중치
+
     $$ w(t,D) = {tf(t,D) * idf(t)\over Length(D)} $$
+
+
 ### 2주차
 - 색인
 - Stemming
@@ -75,10 +80,14 @@
 
 ### 5주차
 - F지표
+
 $$ F = {1\over\alpha{1\over P}+(1-\alpha){1\over R}} $$
+
 - F1지표
+
 $$ F1(\alpha=1/2) = {1\over\alpha{1\over P}+(1-\alpha){1\over R}}
 = {1\over {1\over 2}{1\over P}+(1-{1\over 2}){1\over R}} = {2PR\over P+R} $$
+
 
 ### 6주차
 - Precision-Recall Curve
