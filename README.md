@@ -2,6 +2,10 @@
 
 ## 정보검색 with Python
 
+## 목적
+- 정보검색 강의 과목 정리 및 Review
+- Python 과제를 통한 Python 공부
+
 ## 개발환경
 
 |Tool|Version|
@@ -92,12 +96,32 @@ $$ F = {1\over\alpha{1\over P}+(1-\alpha){1\over R}} $$
 $$ F1(\alpha=1/2) = {1\over\alpha{1\over P}+(1-\alpha){1\over R}}
 = {1\over {1\over 2}{1\over P}+(1-{1\over 2}){1\over R}} = {2PR\over P+R} $$
 
+- Precision, Recall, F1
+  - 검색 문서 집합 단위의 성능 평가 지표
+  - 검색 문서들은 적합도 순으로 정렬되어 있지 않다고 가정
+  - 순위화된 형태로 검색 문서가 제시되는 경우를 고려한 성능 평가 지표가 필요함
 
 ### 6주차
 - Precision-Recall Curve
+  - 순위화된 검색 결과 리스트의 각 순위 지점에 대해, Recall과 Precision 값을 계산하여 2차원 좌표에 표시
+  - 단순 Precision-Recall Curve의 문제 : 일반적으로 톱니모양(sawtooth) 그래프 발생
+- Interpolated Precision-Recall Curve
+  - 순위화된 검색 결과 리스트의 각 순위 지점에 대해, Recall과 Interpolated Precision 값을 계산하여 2차원 좌표에 표시
+  - 좀 더 단순화시켜 특정 재현률 지점들에 대해서만 보간 정확률을 계산할 수 있음
+  - Interpolated Precision(보간정확률) : 특정 recall level r에서의 보간정확률은 r이상의 모든 recall level에서의 최대 정확률로 정의된다.
+- Averaged 11-point Precision/Recall Graph
+  - 각 query에 대해 11개 각 재현율 수준(0.0 ~ 1.0)에서의 보간정확률들을 구하고, 같은 재현율 수준에 대해 서로 다른 질의의 보간정확률들의 평균을 구하여 2차원 좌표에 표시
 - MAP
+  - AP(Average Precision) : 하나의 query에 대해 얻어진 검색문서리스트에서 적합문서가 발견된 지점들에 대해서만 Precision을 계산하여 총 적합문서수로 평균한 것
+  - MAP(Mean Average Precision) : 서로 다른 query들에 대해 각 query의 Average Precision들을 평균한 것
 - Precision at K
+  - 상위 K개의 문서만을 고려하여 정확률을 계산한 것
+  - 장점 : 적합문서집합의 크기를 추정할 필요가 없음
+  - 단점 : 평가지표들 중 가장 불안정, 총 적합문서 수가 성능에 큰 영향을 미침
 - R-precision
+  - 한 query에 대한 총 적합문서 수(R)와 같은 수의 검색문서집합이 얻어진 지점에서의 Precision을 계산
+  - 질의마다 다른 적합문서집합의 크기에 유연하게 반응함
+  - R-precision값은 Precision이면서 동시에 Recall이다. (정확률과 재현율이 같은 지점)
 
 ### 7주차
 - NDCG
