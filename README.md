@@ -125,5 +125,30 @@ $$ F1(\alpha=1/2) = {1\over\alpha{1\over P}+(1-\alpha){1\over R}}
 
 ### 7주차
 - NDCG
+  - 다중 적합도가 부여된 상황을 위해 고안됨
+    1. 이진적합도 → 적합문서(1), 부적합문서(0)
+    2. 다중적합도 → 부적합(0), 부분적 적합(1), 적합(2), 상당부분 적합(3)
+  - Precision at K처럼 상위 K개 검색문서에 대해 계산됨
+  - G(Gain) : 사용자가 얼마나 이득을 얻었는가를 나타냄(적합도 점수)
+  - CG(Cumulative Gain) : Gain 값을 모두 합산한 것
+    1. 단순 누적한 값이다.
+    2. 리스트 내 각 문서의 순위를 반영하지 못함 → CG값으로 어떤 검색 시스템이 좋은지 판별 불가
+  - DCG(Discounted Cumulative Gain) : Discounted된 Gain 값을 합산한 것
+    1. CG에 단점을 보완
+    2. 문서의 순위를 고려하여 Discount 시킴
+    3. 질의별 검색리스트/적합문서집합의 크기 차이를 반영하지 못함
+  - NDCG : DCG를 정규화한 것
+    1. 이진적합도인 경우
+
+    $$ NDCG = {DCG\over max(DCG)} $$
+
+    2. 다중적합도인 경우
+
+    $$ NDCG_k = {DCG_k\over IDCG_k} $$
+
+    3. IDCG : 가장 이상적인 시스템의 DCG값    
 - Pooling technique
+  - Relevance Judgements 구축 방법
+  - 서로 다른 검색 알고리즘을 통해 얻어진 서로 다른 K개(K=50~200)의 문서들의 (중복제거) 모음을 대상으로 수작업 적합성 판단 수행
+  - 대용량 문서집합에 대한 현실적 대응
 - Pivoted Document Length Normalization
