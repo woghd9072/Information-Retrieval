@@ -71,7 +71,7 @@
 ###
   경성대학교에서는 대학생활설계 교과목을 운영하고 있다.
 
-  → 경성, 대학교, 대학, 생활, 설계, 교과묵, 운영
+  → 경성, 대학교, 대학, 생활, 설계, 교과목, 운영
 
 2. 영어 문서 색인에서 대표적 두 가지 전처리 절차는 무엇인가?
 
@@ -202,7 +202,7 @@ c = 1/length
 |:---:|:---:|:---:|:---:|
 |Q|((1+log1)*6)/L|((1+log1)*2)/L|0|
 |D1|((1+log2)*6)/L|((1+log1)*2)/L|0|
-|D2|((1+log1)*6)/L|((1+log2)*2)/L|((1+log1)*1)/L|
+|D2|((1+log1)*6)/L|((1+log2)*2)/L|((1+log2)*1)/L|
 
 $$ |Q| = {1\over \sqrt{6^2+2^2+0^2}} $$
 
@@ -288,9 +288,9 @@ df(한국) = 4
 |D1|log(5/1)|0|0|log(5/4)|
 |D2|0|0|log(5/3)|log(5/4)|
 
-$$ cos(Q,D1) = {0*log(5) + 0*0 + log({5\over 3})* 0 + log({5\over 4})* log({5\over 4})\over \sqrt{0^2+0^2+{log({5\over 3})}^2+log{({5\over 4})}^2} * \sqrt{{log(5)}^2+0^2+0^2+log{({5\over 4})}^2}} $$
+$$ cos(Q,D1) = {0*log(5) + 0*0 + log({5\over 3})* 0 + log({5\over 4})* log({5\over 4})\over \sqrt{0^2+0^2+({log({5\over 3})})^2+(log{({5\over 4})})^2} * \sqrt{({log(5)})^2+0^2+0^2+(log{({5\over 4})})^2}} $$
 
-$$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* log({5\over 3}) + log({5\over 4})* log({5\over 4})\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2} * \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}} $$
+$$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* log({5\over 3}) + log({5\over 4})* log({5\over 4})\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2} * \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}} $$
 
 4. Q, D1, D2의 ltc.ltc 벡터표현을 적고, cos(Q,D1), cos(Q,D2) 수식을 적으시오.
 
@@ -300,15 +300,15 @@ $$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* log({5\over 3}) + log({5\over 4})* 
 |D1|((1+log1)*log(5/1))/L|0|0|((1+log2)*log(5/4))/L|
 |D2|0|0|((1+log1)*log(5/3))/L|((1+log1)*log(5/4))/L|
 
-$$ |Q| = {1\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}} $$
+$$ |Q| = {1\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}} $$
 
-$$ |D1| = {1\over \sqrt{{log(5)}^2+0^2+0^2+({2log({5\over 4})})^2}} $$
+$$ |D1| = {1\over \sqrt{({log(5)})^2+0^2+0^2+({2log({5\over 4})})^2}} $$
 
-$$ |D2| = {1\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}} $$
+$$ |D2| = {1\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}} $$
 
-$$ cos(Q,D1) = {0*log(5) + 0*0 + log({5\over 3})* 0 + log({5\over 4})* 2log({5\over 4})\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2} * \sqrt{{log(5)}^2+0^2+0^2+({2log({5\over 4})})^2}} $$
+$$ cos(Q,D1) = {0*log(5) + 0*0 + log({5\over 3})* 0 + log({5\over 4})* 2log({5\over 4})\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2} * \sqrt{({log(5)})^2+0^2+0^2+({2log({5\over 4})})^2}} $$
 
-$$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* log({5\over 3}) + log({5\over 4})* log({5\over 4})\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2} * \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}} $$
+$$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* log({5\over 3}) + log({5\over 4})* log({5\over 4})\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2} * \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}} $$
 
 
 5. Q, D1, D2의 anc.ltc 벡터표현을 적고, cos(Q,D1), cos(Q,D2) 수식을 적으시오.
@@ -319,15 +319,15 @@ $$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* log({5\over 3}) + log({5\over 4})* 
 |D1|((0.5+(0.5*1)/2)*1)/L|0|0|((0.5+(0.5*2)/2)*1)/L|
 |D2|0|0|((0.5+(0.5*1)/1)*1)/L|((0.5+(0.5*1)/1)*1)/L|
 
-$$ |Q| = {1\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}} $$
+$$ |Q| = {1\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}} $$
 
 $$ |D1| = {1\over \sqrt{({3\over 4})^2+0^2+0^2+1^2}} $$
 
 $$ |D2| = {1\over \sqrt{0^2+0^2+1^2+1^2}} $$
 
-$$ cos(Q,D1) = {0*{3\over 4} + 0*0 + log({5\over 3})* 0 + log({5\over 4})* 1\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}* \sqrt{({3\over 4})^2+0^2+0^2+1^2}} $$
+$$ cos(Q,D1) = {0*{3\over 4} + 0*0 + log({5\over 3})* 0 + log({5\over 4})* 1\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}* \sqrt{({3\over 4})^2+0^2+0^2+1^2}} $$
 
-$$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* 1 + log({5\over 4})* 1\over \sqrt{0^2+0^2+{log({5\over 3})}^2+{log({5\over 4})}^2}* \sqrt{0^2+0^2+1^2+1^2}} $$
+$$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* 1 + log({5\over 4})* 1\over \sqrt{0^2+0^2+({log({5\over 3})})^2+({log({5\over 4})})^2}* \sqrt{0^2+0^2+1^2+1^2}} $$
 
 6. Q, D1, D2의 ltp.nnn 벡터표현을 적고, cos(Q,D1), cos(Q,D2) 수식을 적으시오.(pivoted 문서길이에서 s = 0.2)
 
@@ -339,10 +339,73 @@ $$ cos(Q,D2) = {0*0 + 0*0 + log({5\over 3})* 1 + log({5\over 4})* 1\over \sqrt{0
 
 $$ |Q| = 1 $$
 
-$$ |D1| = {1\over 0.8 + 0.2 * {3\over 13}} $$
+$$ |D1| = {1\over 0.8 + 0.2 * {3*5\over 13}} $$
 
-$$ |D2| = {1\over 0.8 + 0.2 * {2\over 13}} $$
+$$ |D2| = {1\over 0.8 + 0.2 * {2*5\over 13}} $$
 
-$$ cos(Q,D1) = {0*log(5)+ 0*0 + 1*0 + 1*2log({5\over 4})\over \sqrt{1^2} * ({0.8 + 0.2 * {3\over 13}})} $$
+$$ cos(Q,D1) = {0*log(5)+ 0*0 + 1*0 + 1*2log({5\over 4})\over ({0.8 + 0.2 * {3*5\over 13}})} $$
 
-$$ cos(Q,D2) = {0*0 + 0*0 + 1*log({5\over 3}) + 1*log({5\over 4})\over \sqrt{1^2} * (0.8 + 0.2 * {2\over 13})} $$
+$$ cos(Q,D2) = {0*0 + 0*0 + 1*log({5\over 3}) + 1*log({5\over 4})\over (0.8 + 0.2 * {2*5\over 13})} $$
+
+## 6주차 Quiz
+
+1. 다음 표로부터 Accuracy, Precision, Recall, F1을 구하시오.
+
+||Relevant|Non-relevant|합|
+|:---:|:---:|:---:|:---:|
+|Retrieved|7|13|20|
+|Not Retrieved|58|922|980|
+|합|65|935|1000|
+
+$$ Accuracy = {7+922\over 1000} $$
+$$ Precision = {7\over 20} $$
+$$ Recall = {7\over 65} $$
+$$ F1 = {2*{7\over 20}* {7\over 65}\over {7\over 20} + {7\over 65}} $$
+
+2. 적합문서의 총 개수가 14인 질의 Q에 대해 20개 문서가 검색되었으며, 검색된 문서 중 5개 적합문서가 포함되어 있다. 질의 Q에 대한 Precision, Recall, F1을 구하시오.
+
+
+$$ Precision = {5\over 20} $$
+
+
+$$ Recall = {5\over 14} $$
+
+$$ F1 = {2*{5\over 20}* {5\over 14}\over {5\over 20}+{5\over 14}} $$
+
+3. 다음 표는 질의 Q에 대한 검색 문서 집합 전체를 보인 것이다. 질의 Q의 적합문서집합 R={800:1, 690:3, 700:3, 500:2}이라고 할 때 아래 질문에 답하시오.
+
+|순위|문서번호|적합도|Recall|Precision|DCG|IDCG|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|1|381|0|0/4|0/1|0/1|3/1|
+|2|800|1|1/4|1/2|1/2|3/2|
+|3|456|0|1/4|1/3|0/3|2/3|
+|4|451|0|1/4|1/4|0/4|1/4|
+|5|761|0|1/4|1/5|0/5|0/5|
+|6|690|3|2/4|2/6|3/6|0/6|
+|7|295|0|2/4|2/7|0/7|0/7|
+
+A. 정확률, 재현율, F1을 구하시오.
+
+$$ Precision = {2\over 7} $$
+
+$$ Recall = {2\over 4} $$
+
+$$ F1 = {2*{2\over 7}* {2\over 4}\over {2\over 7} + {2\over 4}} $$
+
+B. 11-point recall-precision 그래프를 그리시오.
+
+C. MAP, Pre@5, R-precision을 구하시오.
+
+$$ MAP = {{1\over 2} + {2\over 6}\over 4} $$
+
+$$ Pre@5 = {1\over 5}$$
+
+$$ R-precision = {1\over 4} $$
+
+D. CG7, DCG7, NDCG7를 구하시오.(Discounted Gain은 Gain값을 순위로 나눈 값을 사용할 것)
+
+$$ CG_7 = 0 + 1 + 0 + 0 + 0 + 3 + 0 = 4 $$
+
+$$ DCG_7 = {0\over 1} + {1\over 2} + {0\over 3} + {0\over 4} + {0\over 5} + {3\over 6} + {0\over 7} = 1 $$
+
+$$ NDCG_7 = {{0\over 1} + {1\over 2} + {0\over 3} + {0\over 4} + {0\over 5} + {3\over 6} + {0\over 7}\over {3\over 1} + {3\over 2} + {2\over 3} + {1\over 4} + {0\over 5} + {0\over 6} + {0\over 7}} = {65\over 12} $$
