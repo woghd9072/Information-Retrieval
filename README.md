@@ -176,3 +176,15 @@ $$ F1(\alpha=1/2) = {1\over\alpha{1\over P}+(1-\alpha){1\over R}}
   - 여사건(여집합) : 어떤 사건 A가 발생하지 않는 사건
 - 조건부 확률(conditional probability)
   - 사건 A가 발생한 조건 하에 사건 B가 발생할 확률
+  - P(B|A) = P(A∩B) / P(A)
+- 곱사건과 조건부 확률
+  - P(A∩B) = P(A,B) = P(A)P(B|A)
+- 독립사건
+  - P(A∩B) = P(A)P(B)
+- 체인법칙
+  - P(A, B, C) = P(A,B)P(C|A,B) = P(A)P(B|A)P(C|A,B)
+- P(A) = P(A,B) + P(A,B^C)
+  - B와B^C는 서로 배반이고 B∪B^C는 표본공간이됨
+  - P(A) = P(A∩S) = P(A∩(B∪B^C)) = P((A∩B)∪(A∩B^C)) = P(A∩B)+P(A∩B^C) = P(A,B) + P(A,B^C)
+- P(A) = P(A,B1) + P(A,B2) + P(A,B3) + ... + P(A,Bn)
+  - 조건 : 서로 배반인 n개의 사건들의 합집합 B1∪B2∪B3∪... ∪Bn이 표본공간이됨
